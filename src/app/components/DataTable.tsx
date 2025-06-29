@@ -5,7 +5,8 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 
 type Props = {
   rows: any[];
-  errors?: number[];
+  errors: number[];
+  query?: string; // ← Add this line if missing
 };
 
 const DataTable: React.FC<Props> = ({ rows, errors = [] }) => {
